@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>flexbox</title>
+    <style>
+        body{
+            padding: 0cm;
+        }
+        .headerContainer{
+            display:flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background-color: chocolate;
+            padding: 3px;
+            color: white;
+            font-weight: bold;
+            text-shadow:2px 2px rgb(206, 194, 194);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .footerContainer{
+            display:flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background-color:cadetblue;
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            text-shadow:2px 2px rgb(206, 194, 194);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .mainContainer{
+            display: flex;
+            flex-flow: row wrap;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+        .mainIteam{
+            text-align: left;
+            background: white;
+        }
+        article{
+            padding: 20px;
+            margin: 5px;
+            background:steelblue;
+            color: white;
+        }
+        .sideleft{
+            background: lightcoral;
+            text-align: center;
+            color: white;
+        }
+        .sideright{
+            background: yellowgreen;
+            text-align: center;
+            color: white;
+        }
+         .sideBar{
+            flex: 1 0 0;border: 0px solid black;
+        }
+        .mainIteam{
+            flex:  3 0px;
+        }
+       
+        .sideleft{order: 1;}
+        .mainIteam{order: 2;}
+        .sideright{order: 3;}
+        
+    </style>
+</head>
+<body>
+    <header class="headerContainer"><h1>HEADER DEMO</h1></header>
+    <div class="mainContainer">
+        <section class="mainIteam">
+        <article>
+            <h2>FIRST ARTICLE</h2>
+        <p>
+            .....................
+        </p></article>
+        <article>
+            <h2>SECOND ARTICLE</h2>
+            <p>
+                *****************************
+            </p>
+        </article>
+        <article>
+            <h2>THIRD ARTICLE</h2>
+            <p>
+                ---------------------
+            </p>
+        </article>
+        </section>
+        <sideBar class="sideBar sideleft"><div class="centre"><p>LEFT SIDE BAR</p></div></sideBar>
+        <sideBar class="sideBar sideright"><div class="centre"><p>RIGHT SIDE BAR</p></div></sideBar>
+
+    </div>
+    <footer class="footerContainer">FOOTER DEMO</footer>
+</body>
+</html>
