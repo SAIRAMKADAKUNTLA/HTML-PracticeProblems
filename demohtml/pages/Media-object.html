@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<title>Media</title>
+<style>
+    .headerContainer{
+            display: flex;
+            flex-flow: column wrap;
+            background-color: darkslategrey;
+            color: white;
+            padding: 3px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            align-content: center;
+    }
+    .media{
+        display: flex;
+        align-items: flex-start;
+        background-color:lightgray;
+        padding: 1em;
+        border-radius: 3px;
+        max-width: 300em;
+    }
+    .object{
+        margin-right: 1em;
+        max-width: 100%;
+
+    }
+    
+    
+    .media-body{
+        flex: .8;
+    }
+    .heading{
+        margin: 0 0 .5em;
+    }
+</style>
+<body>
+    <header class="headerContainer"><h1>BEAUTIFULL PLACES IN INDIA</h1></header>
+    <div class="media">
+        <img class="object" src="..\assests\21.jpg" alt="photo">
+        <div class="media-body">
+            <h3 class="heading">AMRITSAR</h3>
+            <p>
+                Amritsar, the "Jewel of Punjab," has made its claim to fame with its remarkable Golden Temple.
+                 One of the holiest places in the world for Sikhs, the gilded structure is a sight to behold.
+            </p>
+            <div class="media">
+                <img class="object" src="..\assests\22.jpg" alt="photo">
+                <div class="media-body">
+                    <h3 class="heading">GOA</h3>
+                    <p>
+                        India's not just full of big cities and holy sites—it also has incredible beaches down south in Goa. 
+                        Its stretches of golden sand along the Arabian Sea offer something for every type of tourist.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
